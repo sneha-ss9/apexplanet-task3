@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - Image Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Task 3 💗</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#slider">Carousel</a></li>
+            <li><a href="#api">Cat Generator 🐱</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1>Image Carousel</h1>
+        <p class="subtitle">
+            Interactive JavaScript Carousel with Random Cat API 🐱
+        </p>
+
+        <!-- Carousel Section -->
+        <section id="slider" class="slider-section">
+            <div class="slider">
+                <img id="slideImage"
+                     src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000"
+                     alt="slider">
+
+                <button class="prev" onclick="prevSlide()">❮</button>
+                <button class="next" onclick="nextSlide()">❯</button>
+            </div>
+
+            <div class="dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+                <span class="dot" onclick="goToSlide(3)"></span>
+            </div>
+        </section>
+
+        <!-- Cat API Section -->
+        <section id="api" class="api-section">
+            <h2>Random Cat Generator 🐱</h2>
+
+            <div class="cat-box">
+                <img id="catImage"
+                     src="https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg"
+                     alt="Cute Cat">
+            </div>
+
+            <button onclick="getCat()">Generate Cat</button>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made by Sneha | ApexPlanet Task 3 🚀</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
